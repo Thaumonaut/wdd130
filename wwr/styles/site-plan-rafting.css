@@ -1,8 +1,75 @@
-/* CSS HEX */
-html {
-   --oxford-blue: #0a122aff;
-   --pomp-and-power: #805d93ff;
-   --light-sea-green: #20a39eff;
-   --light-green: #9ce37dff;
-   --xanthous: #ffba49ff;
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Kanit:wght@500;700;800&display=swap');
+
+:root {
+   --primary-color: rgb(101, 110, 243);
+   --secondary-color: #6564dbff;
+   --accent1-color: #ecfdff;
+   --accent2-color: rgb(8, 14, 29);
+
+   --paragraph-font: 'Inter', Arial, Helvetica, sans-serif;
+   --heading-font: 'Kanit', Arial, Helvetica, sans-serif;
+
+   --nav-background-color: #cad8ff;
+   --nav-hover-background-color: #101d42ff;
+   --nav-link-color: #232ed1ff;
+   --nav-hover-color: #cad8ff;
+
+}
+
+
+body {
+   font-family: var(--paragraph-font);
+   max-width: 960px;
+   padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: var(--heading-font);
+   color: var(--primary-color);
+   font-weight: 500;
+}
+
+header {
+   padding: 20px;
+   background-color: var(--accent2-color);
+   color: var(--primary-color);
+   font-weight: 600;
+   padding-bottom: 3rem;
+}
+
+p {
+   padding: 25px;
+}
+
+h1 {
+   font-weight: 900;
+   color: var(--accent1-color);
+   margin-bottom: 0.1rem;
+}
+
+nav {
+   padding: 1rem;
+   text-align: center;
+}
+
+nav a {
+   color: var(--nav-link-color);
+   background-color: var(--nav-background-color);
+   padding: 1rem;
+   margin: 2rem 1rem;
+   text-decoration: none;
+   transition: 250ms;
+   font-weight: 700;
+   border-radius: 5px;
+}
+
+nav a:hover {
+   color: var(--nav-hover-color);
+   background-color: var(--nav-hover-background-color);
+   text-decoration: none;
 }
