@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Kanit:wght@500;700;800&display=swap');
 
 :root {
-   --primary-color: rgb(101, 110, 243);
+   --primary-color: #656ef3;
    --secondary-color: #6564dbff;
    --accent1-color: #ecfdff;
    --accent2-color: rgb(8, 14, 29);

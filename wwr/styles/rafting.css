@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Kanit:wght@200;500;700;800&display=swap');
+
+:root {
+    --primary-color: rgb(33, 153, 252);
+    --secondary-color: rgb(71, 69, 243);
+    --accent1-color: rgb(236, 253, 255);
+    --accent2-color: rgb(8, 14, 29);
+
+    --paragraph-font: 'Inter', Arial, Helvetica, sans-serif;
+    --heading-font: 'Kanit', Arial, Helvetica, sans-serif;
+
+    --nav-background-color: #cad8ff;
+    --nav-hover-background-color: #101d42ff;
+    --nav-link-color: #232ed1ff;
+    --nav-hover-color: #cad8ff;
+
+}
+
+* {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 0;
+    margin: auto;
+}
+
+main {
+    padding: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-weight: 500;
+
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.hero h1,
+.hero article {
+    position: absolute;
+}
+
+.hero h1 {
+    top: 15%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: 200;
+    font-size: 4rem;
+    background-color: #000000aa;
+}
+
+.hero article img {
+    float: right;
+    max-width: 10rem;
+}
+
+.hero article {
+    bottom: 20%;
+    background-color: rgba(236, 253, 255, 0.8);
+    padding: 3rem;
+    width: 80%;
+    margin: auto;
+    right: 0;
+    left: 0;
+}
