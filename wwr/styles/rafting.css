@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Kanit:wght@200;500;700;800&display=swap');
 
 :root {
-    --primary-color: rgb(33, 153, 252);
+    --primary-color: rgb(19, 127, 214);
     --secondary-color: rgb(71, 69, 243);
     --accent1-color: rgb(236, 253, 255);
     --accent2-color: rgb(8, 14, 29);
@@ -14,6 +14,8 @@
     --nav-link-color: #ebf0ff;
     --nav-hover-color: #232ed1;
 
+    --section-padding: 3rem;
+
 }
 
 * {
@@ -22,10 +24,7 @@
     padding: 0;
     margin: auto;
     box-sizing: border-box;
-}
-
-main {
-    /* padding: 2rem; */
+    list-style-type: none;
 }
 
 header {
@@ -86,7 +85,6 @@ h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
     font-weight: 500;
-
 }
 
 .hero {
@@ -125,7 +123,7 @@ h6 {
 .hero article {
     background-color: var(--accent2-color);
     color: var(--accent1-color);
-    padding: 3rem;
+    padding: var(--section-padding);
     width: 90%;
     margin: auto;
     right: 0;
@@ -136,7 +134,7 @@ h6 {
 
 .history {
     /* margin: 2rem 0; */
-    padding: 3rem;
+    padding: var(--section-padding);
     background-color: var(--secondary-color);
 }
 
@@ -148,6 +146,10 @@ h6 {
     color: var(--accent1-color);
 }
 
+h1 {
+    font-size: 3rem;
+}
+
 h2 {
     font-size: 2rem;
 }
@@ -157,7 +159,7 @@ h2 {
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
     gap: 1rem;
-    padding: 3rem;
+    padding: var(--section-padding);
     background-color: var(--accent2-color);
 }
 
@@ -188,11 +190,131 @@ figcaption {
 }
 
 footer {
-    padding: 3rem 0;
+    padding: var(--section-padding) 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr) 60% repeat(3, 1fr);
 }
 
 footer p {
     grid-column: 4/5;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+.heading {
+    background-color: var(--primary-color);
+    padding: 4rem;
+    color: var(--accent1-color);
+}
+
+.heading h1 {
+    color: var(--accent1-color);
+}
+
+.location {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-weight: 300;
+}
+
+.location h2 {
+    font-size: 3rem;
+    font-weight: 100;
+    color: var(--accent2-color);
+    line-height: 3.5rem;
+}
+
+.employees {
+    background-color: var(--accent2-color);
+    text-align: center;
+    color: var(--accent1-color);
+    padding: var(--section-padding);
+}
+
+.employees div {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    font-size: smaller;
+}
+
+.employees figcaption {
+    margin-top: 1rem;
+    padding: 0 1rem;
+}
+
+.employees img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+fieldset {
+    border: none;
+}
+
+.message-form {
+    padding-top: var(--section-padding);
+}
+
+.message-form form {
+    padding: var(--section-padding);
+    margin-top: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.message-form form fieldset,
+.message-form form input[type=text],
+.message-form form input[type=email],
+textarea {
+    width: 100%;
+    padding: .5rem;
+    margin-top: 0.5rem;
+}
+
+.radio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.radio p {
+    grid-column: 1/4;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.form-bottom {
+    display: grid;
+    align-content: left;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    /* align-items: center; */
+}
+
+.form-bottom button {
+    padding: 1rem 2rem;
+    margin-right: 0.5rem;
+    border: none;
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+    border-radius: 0.5rem;
+}
+
+.form-bottom {
+    padding-top: 1rem;
+    font-size: small;
+    justify-self: left;
+    align-self: left;
+}
+
+input:active,
+input[type='radio']:checked,
+input[type='checkbox']:checked {
+    accent-color: var(--accent2-color);
 }
