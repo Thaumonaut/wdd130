@@ -26,10 +26,10 @@ fieldset {
     border: none;
     margin: 0;
     padding: 0;
-    counter-increment: quiz-counter;
 }
 
 label::before {
+    counter-increment: quiz-counter;
     content: counter(quiz-counter) ". ";
     color: #083ef1;
     font-weight: bolder;

@@ -6,24 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/quiz.css">
-    <meta name="description" content="Quiz Page">
+    <meta name="description" content="Genshin Impact quiz page.">
     <meta name="author" content="Jacob Perry">
-    <title>Quiz</title>
+    <title>Quiz page made with HTML and CSS</title>
 </head>
 
 <body>
     <form>
+        <h1>Genshin Quiz</h1>
+
         <fieldset>
             <label for="q1">What reaction do you get when you mix Hydro and Pyro?</label>
             <input type="text" name="q1" id="q1">
         </fieldset>
         <fieldset>
             <label for="q2">Who are the Abyss Order?</label>
-            <textarea rows="4" name="q1" id="q1"></textarea>
+            <textarea rows="4" name="q2" id="q2"></textarea>
         </fieldset>
         <fieldset>
             <label for="q3">Which Element has the Least playable units</label>
-            <select>
+            <select title="Question 3">
                 <option selected disabled>Choose One...</option>
                 <option>Dendro</option>
                 <option>Geo</option>
@@ -33,9 +35,10 @@
         </fieldset>
         <fieldset>
             <label>How many Darshans are there?</label>
-            <input type="number" name="q4" id="q4">
+            <input placeholder="0" title="Question 4" type="number" name="q4" id="q4">
         </fieldset>
-        <button>Submit Quiz</button>
+
+        <button type="submit">Submit Quiz</button>
     </form>
 </body>
 
