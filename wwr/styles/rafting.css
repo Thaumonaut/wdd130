@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Kanit:wght@200;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Kanit:wght@200;500;700;800&display=swap');
 
 :root {
-    --primary-color: rgb(19, 127, 214);
+    --primary-color: rgb(22, 148, 252);
     --secondary-color: rgb(71, 69, 243);
     --accent1-color: rgb(236, 253, 255);
     --accent2-color: rgb(8, 14, 29);
@@ -220,10 +220,27 @@ footer p {
 }
 
 .location h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 100;
     color: var(--accent2-color);
-    line-height: 3.5rem;
+    /* line-height: 4rem; */
+}
+
+.location h3 {
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+.location p {
+    line-height: 2rem;
+    font-weight: 100;
+}
+
+.location p span {
+    color: var(--primary-color);
+    font-weight: 800;
 }
 
 .employees {
@@ -263,8 +280,8 @@ fieldset {
 .message-form form {
     padding: var(--section-padding);
     margin-top: 1rem;
-    background-color: var(--secondary-color);
-    color: var(--accent1-color);
+    background-color: #eeeeee;
+    color: var(--accent2-color);
     /* display: flex;
     flex-direction: column; */
 }
@@ -301,7 +318,7 @@ textarea {
     padding: 1rem 2rem;
     margin-right: 0.5rem;
     border: none;
-    background-color: var(--accent2-color);
+    background-color: var(--primary-color);
     color: var(--accent1-color);
     border-radius: 0.5rem;
 }
@@ -316,5 +333,5 @@ textarea {
 input:active,
 input[type='radio']:checked,
 input[type='checkbox']:checked {
-    accent-color: var(--accent2-color);
+    accent-color: var(--primary-color);
 }
