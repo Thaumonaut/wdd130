@@ -221,7 +221,7 @@ footer p {
 
 .location h2 {
     font-size: 2.5rem;
-    font-weight: 100;
+    font-weight: 200;
     color: var(--accent2-color);
     /* line-height: 4rem; */
 }
@@ -235,7 +235,7 @@ footer p {
 
 .location p {
     line-height: 2rem;
-    font-weight: 100;
+    font-weight: 200;
 }
 
 .location p span {
