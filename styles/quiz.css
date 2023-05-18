@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    background-color: rgb(235, 232, 220);
+    max-width: 400px;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 2px solid rgba(128, 128, 128, 0.473);
+}
+
+fieldset {
+    position: relative;
+    display: grid;
+    border: none;
+    margin: 0;
+    padding: 0;
+    counter-increment: quiz-counter;
+}
+
+label::before {
+    content: counter(quiz-counter) ". ";
+    color: #083ef1;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    border-radius: 0.3rem;
+    border: 1px solid gray;
+}
+
+label {
+    margin-bottom: .5rem;
+    margin-top: 1rem;
+}
+
+form button {
+    background-color: rgb(12, 79, 224);
+    border-radius: 1rem;
+    color: white;
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0rem;
+    border: none;
+}
+
+form button:hover {
+    background-color: rgb(2, 54, 165);
+}
+
+form button:active {
+    background-color: rgb(1, 33, 102);
+}
+
+body {
+    counter-reset: quiz-counter;
+}
