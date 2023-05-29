@@ -94,6 +94,10 @@ h6 {
     background-color: var(--accent2-color);
 }
 
+.full-width-hero {
+    grid-column: span 4;
+}
+
 .hero>img {
     max-height: 600px;
     width: 100%;
@@ -110,13 +114,14 @@ h6 {
 
 .hero article {
     position: absolute;
+    justify-content: end;
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr 1fr; */
+    gap: 1rem;
     align-content: center;
-
-    justify-items: center;
+    justify-items: right;
     top: 0;
 }
 
@@ -133,6 +138,22 @@ h6 {
     padding: 2rem;
     width: 90%;
     border-radius: 0.5rem;
+}
+
+.primary-btn {
+    grid-column: 2/3;
+    width: 100%;
+}
+
+.secondary-btn {
+    grid-column: 3/4;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    width: 100%;
+}
+
+.secondary-btn:hover {
+    color: var(--accent1-color);
 }
 
 .history {
@@ -352,6 +373,8 @@ input[type='checkbox']:checked {
 
 .trip-hero h1 {
     color: var(--accent1-color);
+    text-align: center;
+    line-height: 4rem;
 }
 
 .trip-hero p {
@@ -375,6 +398,7 @@ input[type='checkbox']:checked {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    padding-top: 2rem;
 }
 
 .trip article {
@@ -386,6 +410,7 @@ input[type='checkbox']:checked {
 
 .trip img {
     width: 100%;
+    border-radius: 5px;
 }
 
 .trip button {
@@ -407,26 +432,92 @@ input[type='checkbox']:checked {
     cursor: pointer;
 }
 
-.trip p {
-    color: var(--accent1-color);
-    font-weight: 700;
-    font-size: 1.75rem;
-    padding-bottom: 3.5rem;
-    background-color: rgba(8, 14, 29, .75);
-
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-}
-
 .trips h2 {
     margin-top: 2rem;
 }
 
-.trips p {
-    margin-bottom: 1rem;
+.trip h3 {
+    color: var(--accent1-color);
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+
+}
+
+.trip p {
+    color: white;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 0;
+}
+
+.trip-text {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: rgba(8, 14, 29, .75);
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: start;
+    gap: 1rem;
+}
+
+.main-grid .trips {
+    grid-column: 1/4;
+}
+.main-grid .trip {
+    grid-template-columns: 1fr;
+}
+
+aside {
+    padding-top: 2rem;
+    padding: 2rem;
+    height: 100%;
+    grid-column: 4/6;
+    background-color: var(--nav-link-color);
+}
+
+aside input[type="text"] {
+    font-size: 1rem;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+aside button {
+    float: right;
+}
+
+.raft-with-us {
+    padding-top: 2rem;
+    grid-column: span 5;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.raft-with-us img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.raft-with-us p {
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+.raft-with-us h2 {
+    grid-column: span 4;
+    text-align: left;
+    width: 100%;
 }
