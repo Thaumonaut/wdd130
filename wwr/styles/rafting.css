@@ -2,7 +2,7 @@
 
 :root {
     --primary-color: rgb(22, 148, 252);
-    --secondary-color: rgb(71, 69, 243);
+    --secondary-color: #4745f3;
     --accent1-color: rgb(236, 253, 255);
     --accent2-color: rgb(8, 14, 29);
 
@@ -485,14 +485,33 @@ aside {
     background-color: var(--nav-link-color);
 }
 
-aside input[type="text"] {
-    font-size: 1rem;
+aside input[type="email"] {
+    font-size: 0.8rem;
     width: 100%;
     margin: 1rem 0;
+    padding: 0.2rem;
+    padding-left: 3.2rem;
+}
+
+aside form {
+    position: relative;
+}
+
+aside label {
+    position: absolute;
+    top: 1.3rem;
+    left: 0.4rem;
+    font-size: smaller;
+    font-weight: 800;
 }
 
 aside button {
     float: right;
+    background-color: var(--secondary-color);
+}
+
+aside h2 {
+    color: var(--secondary-color);
 }
 
 .raft-with-us {
